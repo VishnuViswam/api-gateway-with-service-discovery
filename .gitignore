@@ -1,0 +1,6 @@
+/.idea/
+/api-gateway/.idea/
+/api-gateway/logs/
+/api-gateway/target/
+/service-app/.idea/
+/service-app/target/
