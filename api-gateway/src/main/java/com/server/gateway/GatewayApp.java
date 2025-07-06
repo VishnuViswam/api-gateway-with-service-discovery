@@ -1,4 +1,4 @@
-package com.server.service;
+package com.server.gateway;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -8,17 +8,16 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-public class ServiceApp {
+public class GatewayApp {
 
-	private static final Logger logger = LoggerFactory.getLogger(ServiceApp.class);
+	private static final Logger logger = LoggerFactory.getLogger(GatewayApp.class);
 
-	static {
-		logger.info("Service Application is starting.....");
+	{
+		logger.info("Gateway Application is starting.....");
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(ServiceApp.class, args);
-		logger.info("Service Application is started !!");
+		SpringApplication.run(GatewayApp.class, args);
+		logger.info("Gateway Application is started !!");
 	}
-
 }
